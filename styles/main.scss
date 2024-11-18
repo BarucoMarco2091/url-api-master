@@ -1,0 +1,20 @@
+@import '../styles/variables.scss';
+
+.container {
+    display: flex;
+    
+    .text-container {
+        flex: 1;
+        margin-left: 5dvh;
+
+        .text-container-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4rem;
+            color: $veryDarkBlue;
+        }
+    }
+
+    .img-container {
+        flex: 1;
+    }
+}

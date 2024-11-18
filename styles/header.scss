@@ -6,3 +6,63 @@
 }
 
 @import '../styles/variables.scss';
+@import '../styles/main.scss';
+
+.navbar {
+    margin-top: 5dvh;
+    margin-bottom: 17dvh;
+    padding: 1dvh;
+    display: flex;
+    justify-content: space-around;
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 3dvh;
+        list-style: none;
+
+        .nav-link {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+
+            a {
+                color: $gray;
+                cursor: pointer;
+            }
+
+            a:hover {
+                color: $veryDarkViolet;
+            }
+        }
+    }
+
+    .login-btn {
+        border: none;
+        background-color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        color: $gray;
+    }
+
+    .sign-up-btn {
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: cyan;
+        width: 15dvh;
+        height: 5dvh;
+        border-radius: 5dvh;
+        color: $gray;
+    }
+
+    .sign-up-btn:hover {
+        color: white;
+    }
+    
+}
