@@ -7,10 +7,87 @@
   box-sizing: border-box;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .container {
   display: flex;
 }
+.container .text-container {
+  flex: 1;
+  margin-left: 10dvh;
+}
+.container .text-container .text-container-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  color: hsl(255, 11%, 22%);
+  animation: fadeIn 2s ease-in-out;
+}
+.container .text-container .text-container-paragraph {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  color: hsl(0, 0%, 75%);
+  margin-top: 1.5dvh;
+}
+.container .text-container .get-started-btn {
+  margin-top: 5dvh;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: cyan;
+  width: 20dvh;
+  height: 7dvh;
+  border-radius: 5dvh;
+  border: none;
+  color: #fff;
+  animation: fadeIn 1s ease-in;
+}
+.container .img-container {
+  flex: 1;
+}
+.container .img-container .working-picture {
+  max-width: 100%;
+  height: auto;
+  animation: fadeIn 1s ease-in;
+}
 
+.second-container {
+  background-color: hsl(0, 0%, 75%);
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary-paragraph {
+  text-align: center;
+  margin-top: 4dvh;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .navbar {
   margin-top: 5dvh;
   margin-bottom: 17dvh;
@@ -21,6 +98,7 @@
 .navbar .logo {
   max-width: 100%;
   height: auto;
+  animation: fadeIn 1s ease-in;
 }
 .navbar .nav-list {
   display: flex;
@@ -45,6 +123,7 @@
   font-size: 1rem;
   cursor: pointer;
   color: hsl(0, 0%, 75%);
+  animation: fadeIn 1s ease-out;
 }
 .navbar .sign-up-btn {
   border: none;
@@ -56,6 +135,8 @@
   height: 5dvh;
   border-radius: 5dvh;
   color: hsl(0, 0%, 75%);
+  animation: fadeIn 1s ease-in;
+  animation: pulse 2s infinite ease-out;
 }
 .navbar .sign-up-btn:hover {
   color: white;
