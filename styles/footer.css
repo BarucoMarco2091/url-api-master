@@ -1,1 +1,39 @@
-/*# sourceMappingURL=footer.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+footer {
+  background-color: hsl(260, 8%, 14%);
+  padding-top: 5dvh;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  height: 30dvh;
+}
+footer .footer-container .footer-img .logo {
+  filter: invert(100%);
+}
+footer .footer-container .features-container, footer .footer-container .resources-container, footer .footer-container .company-container {
+  margin-bottom: 8dvh;
+}
+footer .footer-container .features-container span, footer .footer-container .resources-container span, footer .footer-container .company-container span {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+}
+footer .footer-container .features-container p, footer .footer-container .resources-container p, footer .footer-container .company-container p {
+  margin-top: 1dvh;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: hsl(0, 0%, 75%);
+  cursor: pointer;
+}
+footer .footer-container .features-container p:hover, footer .footer-container .resources-container p:hover, footer .footer-container .company-container p:hover {
+  color: hsl(180, 66%, 49%);
+}
+footer .footer-container .footer-icons .icon-facebook, footer .footer-container .footer-icons .icon-twitter, footer .footer-container .footer-icons .icon-pinterest, footer .footer-container .footer-icons .icon-instagram {
+  padding-right: 2dvh;
+  cursor: pointer;
+  font-size: 1.9rem;
+}
+footer .footer-container .footer-icons .icon-facebook:hover, footer .footer-container .footer-icons .icon-twitter:hover, footer .footer-container .footer-icons .icon-pinterest:hover, footer .footer-container .footer-icons .icon-instagram:hover {
+  color: hsl(180, 66%, 49%);
+}/*# sourceMappingURL=footer.css.map */

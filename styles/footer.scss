@@ -1,0 +1,53 @@
+@import '../styles/variables.scss';
+
+footer {
+    background-color: $veryDarkViolet;
+    padding-top: 5dvh;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        height: 30dvh;
+
+        .footer-img {
+            .logo {
+                filter: invert(100%);
+            }
+        }
+
+        .features-container, .resources-container, .company-container {
+            margin-bottom: 8dvh;
+
+            span {
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.1rem;
+            }
+
+            p {
+                margin-top: 1dvh;
+                font-family: 'Poppins', sans-serif;
+                font-size: 1rem;
+                color: $gray;
+                cursor: pointer;
+            }
+
+            p:hover {
+                color: $cyan;
+            }
+        }
+
+        .footer-icons {
+        
+            .icon-facebook, .icon-twitter, .icon-pinterest, .icon-instagram {
+                padding-right: 2dvh;
+                cursor: pointer;
+                font-size: 1.9rem;
+            }
+
+            .icon-facebook:hover, .icon-twitter:hover, .icon-pinterest:hover, .icon-instagram:hover {
+                color: $cyan;
+            }
+        }
+    }
+}
